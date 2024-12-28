@@ -44,6 +44,9 @@ android {
     namespace 'com.example.installplugin'
 }
 
+kotlin {
+    jvmToolchain(8) // Define a JVM compatível com Java 1.8
+}
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
